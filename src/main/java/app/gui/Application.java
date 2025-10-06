@@ -136,6 +136,7 @@ public class Application {
                 @Override
                 public void actionPerformed(ActionEvent e) {
                     cardLayout.show(cardPanel, "ManageTeamCard");
+                    System.out.println("Manage Team");
                 }
             });
 
@@ -392,6 +393,7 @@ public class Application {
         theCard.add(new JLabel("The course you want to calculate the team average for:"));
         theCard.add(courseField);
         theCard.add(getAverageButton);
+        theCard.add(getTopGrade);
         theCard.add(leaveTeamButton);
         theCard.add(resultLabel);
         return theCard;
